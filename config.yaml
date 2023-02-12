@@ -1,0 +1,118 @@
+baseURL: "https://arkalim.org"
+languageCode: en-us
+title: Divyansh Tripathi
+theme: PaperMod
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    # - identifier: blog
+    #   name: Blog
+    #   url: /blog
+    #   weight: 20
+    - identifier: about
+      name: About
+      url: /about
+      weight: 20
+
+    - identifier: projects
+      name: Projects
+      url: /projects
+      weight: 30
+
+    # - identifier: search
+    #   name: Search
+    #   url: /search
+      weight: 50
+    - identifier: tags
+      name: Tags
+      url: /tags
+      weight: 60
+    # - identifier: notes
+    #   name: Notes
+    #   url: https://notes.arkalim.org
+    #   weight: 70
+
+params:
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # for enchanced SEO
+  env: production
+
+  # Home Page
+  profileMode:
+    enabled: true
+    title: "Divyansh Tripathi"
+    subtitle: "Hello and welcome to my portfolio website!" 
+    # subtitle: "My name is Divyansh Tripathi, I am a Pre Final year student of Electronics and Communication Engineering department at NIT Hamirpur."
+
+              # "I believe Data is the new gold and will open doors to an unimaginable and exciting age for humanity,Naturally I wish to be a part of this revolution through my knowledge of data science which includes:
+
+              # * Data Visualisation
+              # * Machine Learning
+              # * Deep Learning
+
+
+
+              #   In my free time you may find me tinkering with hardware, watching animes, reading history/philosophy, writing poetry or sharing my thoughts with my peers."
+
+    imageUrl: "home/dp2.jpg"
+    imageWidth: 220
+    imageHeight: 220
+    buttons:
+      - name: Resume
+        url: "https://drive.google.com/file/d/1bxidkBY8ZchaPIuGLdow7DaJih-Lsijj/view?usp=sharing"
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  socialIcons:
+    - name: "email"
+      url: "mailto:20bec0088@nith.ac.in"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/divyansh-tripathi-4bb66a205/"
+    - name: "github"
+      url: "https://github.com/divyansh-tripathi7"
+
+    - name: "Kaggle"
+      url: "https://www.kaggle.com/divyanshtripathi7"
+    - name: "Leetcode"
+      url: "https://leetcode.com/divyanshh007/"
+    # - name: "cv"
+    #   url: "https://drive.google.com/file/d/1U6Gg2RnHSCthtWLbZJBlAEI3V1WGjZty/view"
+
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
