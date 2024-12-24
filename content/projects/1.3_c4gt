@@ -1,0 +1,45 @@
+---
+title: "LLM for Question Answering"
+description: "A project focused on using Large Language Models (LLMs) for efficient question-answering over documents."
+dateString: 2024
+draft: false
+tags: [question answering, LLM, NLP, vector database, Milvus, Kafka, Hugging Face, document processing]
+showToc: false
+weight: 75
+cover:
+    image: "projects/LLMQuestionAnswering/llm_qa_cover.jpg"
+---
+
+### 🔗 [GitHub](https://github.com/sunbird-cb/llm-question-answering)
+
+## Overview
+
+The **LLM for Question Answering** project leverages **Large Language Models (LLMs)** to create a question-answering system capable of efficiently extracting insights from documents. The system utilizes **vector stores** and integrates data retrieval methods to provide context for LLMs, enabling direct and insightful answers to user queries based on document contents.
+
+### Aims of the Projects
+
+#### **LLM for Question Answering 1**
+The goal of this project is to build a **vector store** that enables efficient retrieval of relevant context for LLMs, improving their performance in answering questions based on documents.
+
+#### **LLM for Question Answering 2**
+The objective of this project is to assess the suitability of different **Large Language Models** for question-answering tasks. The pipeline extracts relevant documents from a vector database, based on their similarity to user queries, and uses these documents to provide answers from the LLM.
+
+## Usage
+
+The key files in the project are:
+
+- **DocExtraction.py**: This script extracts text from PDFs and splits the data into chunks using a sliding window approach. The extracted data is published to the Kafka topic `raw_data`.
+- **DocProcessing.py**: Consumes data from the Kafka topic `raw_data`, processes the text (including coreference resolution), and publishes the processed text to another Kafka topic, `processed_data`.
+- **Ingest.py**: Periodically inserts the processed data into the **Milvus vector database**.
+- **Infer.py**: Uses the vector store to retrieve context for queries and passes it through the LLM to provide answers.
+
+### Workflow
+
+1. **DocExtraction.py**: Extracts and chunks text from documents, publishing them to the Kafka `raw_data` topic.
+2. **DocProcessing.py**: Processes the raw data (such as applying coreference resolution) and sends it to `processed_data`.
+3. **Ingest.py**: Inserts processed data into the Milvus vector database.
+4. **Infer.py**: Retrieves the relevant context from the vector database and queries the LLM to answer user questions.
+
+This setup enables efficient **question answering** on documents by retrieving the most relevant context for each query, ensuring the LLM can provide accurate answers.
+
+
