@@ -1,24 +1,38 @@
 ---
-title: "Audio CLeaner"
-description: "Removes noise from audio using signal processing"
+title: "Audio Cleaner"
+description: "A robust audio noise reduction tool using advanced signal processing techniques for clear, high-quality audio."
 dateString: Sept 2022
 draft: false
-tags: [audio cleaner, Fourier Transform, smoothing filter, spectrogram, digital signal processing, SciPy, Spectral Gating]
+tags: [Data Analysis, audio cleaner, signal processing, Fourier Transform, noise removal, SciPy, Spectral Gating, digital signal processing]
 showToc: false
 weight: 60
 cover:
     image: "projects/audioCLeaner/soundCLeaner.jpeg"
---- 
-### 🔗 [GitHub](https://github.com/divyansh-tripathi7/SpeechProcessing)
-<!-- ### 🔗 [Blog Post](../../blog/face-landmarks-detection) -->
+---
 
-## Description
+### 🔗 [View GitHub Repository](https://github.com/divyansh-tripathi7/SpeechProcessing)
 
-The audio cleaner project is designed to remove noise from audio recordings using the **Fourier Transform** and a s**moothing filter**. The project uses a technique called **spectral gating** to identify and remove noise from the audio recording.
+## Project Overview
 
-First, the audio recording is transformed into the frequency domain using the Fourier Transform. The resulting frequency representation is known as the **spectrogram**. The spectrogram is then analyzed to identify the presence of noise.
+The **Audio Cleaner** is a powerful tool designed to enhance audio quality by removing unwanted noise. Using advanced **digital signal processing** (DSP) techniques, this project applies **Fourier Transform** and **spectral gating** to effectively identify and remove noise from audio recordings.
 
-A **noise mask**is created using the spectrogram, which highlights the frequency components that are solely attributed to the noise. A smoothing filter is then applied to the audio recording using this noise mask, which removes the frequency components of the noise and recovers the original audio signal.
+### Key Features:
+- **Noise Removal**: Utilizes Fourier Transform to convert audio into the frequency domain, making it easier to isolate and remove noise.
+- **Spectral Gating**: Identifies noise components in the spectrogram and applies a smoothing filter to remove them, preserving the original audio signal.
+- **Customizable Output**: Users can upload any audio file, and the tool will process the file, offering a clean, noise-free version of the original recording.
+- **Real-Time Processing**: The algorithm works efficiently to ensure minimal delay in processing, offering near real-time noise removal.
+  
+### Use Cases:
+- **Podcast Creators**: Clean up background noise in podcasts for professional-quality audio.
+- **Audio Engineers**: Provide a tool for pre-processing audio recordings, making it easier to work with clean data.
+- **Content Creators**: Enhance the quality of recordings for videos, presentations, and voiceovers.
+- **Research**: Clean up recorded data for speech-to-text applications or audio analysis in machine learning models.
 
-The project is implemented using digital signal processing techniques and libraries, such as **NumPy, SciPy,Librosa and Matplotlib**. The user can upload an audio file to the system and apply the noise removal algorithm to produce a cleaned version of the original audio.
+### Technologies Used:
+- **Fourier Transform**: For transforming audio into the frequency domain.
+- **Spectral Gating & Smoothing Filter**: For removing unwanted noise while preserving the desired audio signal.
+- **SciPy, Librosa, Matplotlib**: For processing and visualizing the audio data, along with implementing the noise reduction algorithms.
 
+This project leverages powerful DSP techniques to provide an essential tool for anyone looking to enhance audio quality, whether it's for podcasts, recordings, or research.
+
+### Category: **GenAI | Data Analysis**
