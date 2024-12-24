@@ -1,0 +1,45 @@
+---
+title: "Automated Multi-Agent Research System"
+description: "An advanced platform that automates the creation of comprehensive research reports using a multi-agent architecture."
+dateString: 2024
+draft: false
+tags: [multi-agent system, research automation, LangGraph, LangChain, OpenAI API, report generation, AI-driven research]
+showToc: false
+weight: 85
+cover:
+    image: "projects/AutomatedResearchSystem/automated_research_system_cover.jpg"
+---
+
+### 🔗 [GitHub](https://github.com/divyansh-tripathi7/Automated-Multi-Agent-Research-System)
+
+## Overview
+
+The **Automated Multi-Agent Research System** is an advanced platform designed for generating comprehensive research reports. Leveraging a **multi-agent architecture**, this system automates the process of research report generation by integrating distinct agents with specialized roles. The project utilizes state-of-the-art technologies such as **LangGraph**, **LangChain**, and the **OpenAI API** to produce detailed reports in multiple formats including **PDF**, **Markdown**, and **DOCX**.
+
+## Features
+
+- **Multi-Agent Architecture**: The system consists of distinct agents that handle different aspects of the research report creation process:
+  - **Researcher**: Gathers and curates research data.
+  - **Writer**: Compiles the research data into a structured report.
+  - **Reviewer**: Provides feedback on the draft report.
+  - **Reviser**: Incorporates review feedback into the draft.
+  - **Publisher**: Finalizes and publishes the report in various formats.
+
+- **Output Formats**: Generates reports in multiple formats, including:
+  - **PDF**
+  - **Markdown**
+  - **DOCX**
+
+## Technologies Used
+
+- **LangGraph**: Used for managing and coordinating the multi-agent workflows.
+- **LangChain**: Facilitates seamless data processing and interaction between agents.
+- **OpenAI API**: Provides advanced natural language processing capabilities to enhance the report generation process.
+
+## Next Steps
+
+- Expand the multi-agent architecture to include more specialized roles for additional research tasks.
+- Incorporate more output formats such as LaTeX for academic publication-ready reports.
+- Enhance the system's ability to interact with external databases for more comprehensive research gathering.
+- Develop a user-friendly interface to interact with the system and customize the research report parameters.
+
