@@ -21,11 +21,11 @@ menu:
     - identifier: projects
       name: Projects
       url: /projects
-      weight: 30
+      weight: 40
 
-    # - identifier: search
-    #   name: Search
-    #   url: /search
+    - identifier: experience
+      name: Experience
+      url: /experience
       weight: 50
     - identifier: tags
       name: Tags
@@ -51,7 +51,7 @@ params:
   profileMode:
     enabled: true
     title: "Divyansh Tripathi"
-    subtitle: "Hello and welcome to my portfolio website!" 
+    subtitle: "Hello you can call me Divi and a very warm welcome to my portfolio website!" 
     # subtitle: "My name is Divyansh Tripathi, I am a Pre Final year student of Electronics and Communication Engineering department at NIT Hamirpur."
 
               # "I believe Data is the new gold and will open doors to an unimaginable and exciting age for humanity,Naturally I wish to be a part of this revolution through my knowledge of data science which includes:
@@ -69,7 +69,7 @@ params:
     imageHeight: 220
     buttons:
       - name: Resume
-        url: "https://drive.google.com/file/d/1bxidkBY8ZchaPIuGLdow7DaJih-Lsijj/view?usp=sharing"
+        url: "https://drive.google.com/drive/folders/1nBtvEm2yOfQAzXa3FSf_c_WjNOV6W4GE"
 
   # List View
   hideDescriptionInList: false
@@ -81,7 +81,7 @@ params:
 
   socialIcons:
     - name: "email"
-      url: "mailto:20bec0088@nith.ac.in"
+      url: "mailto:divyanshbro7@gmail.com"
     - name: "linkedin"
       url: "https://www.linkedin.com/in/divyansh-tripathi-4bb66a205/"
     - name: "github"
