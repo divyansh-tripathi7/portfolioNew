@@ -1,0 +1,58 @@
+---
+title: "Emotion Detection from Scratch"
+description: "Train an image classifier to detect emotions from facial expressions using the Kaggle FER-2013 Dataset."
+dateString: 2024
+draft: false
+tags: [emotion detection, facial expressions, CNN, transfer learning, data augmentation, VGG16, ResNet50, FER-2013 dataset, machine learning, image classification]
+showToc: false
+weight: 85
+cover:
+    image: "projects/emotion_detection/emotion_detection.jpg"
+--- 
+
+### 🔗 [GitHub](https://github.com/divyansh-tripathi7/emotion_detection)
+
+## Description
+
+This project aims to **train an image classifier from scratch** to detect emotions from facial expressions using the **Kaggle FER-2013 Dataset**. The model classifies images into **seven emotion categories** based on facial expressions, utilizing various approaches to improve its accuracy and robustness.
+
+### Approaches
+
+#### 1. **Custom CNN From Scratch**:
+- Built a **Convolutional Neural Network (CNN)** from scratch, using layers like **Conv2D, MaxPooling2D, BatchNormalization, Dropout, Flatten**, and **Dense**.
+- The model architecture was designed to gradually extract features from the input images and classify them into seven emotion categories.
+- Trained on the **FER-2013 dataset**.
+
+#### 2. **Custom CNN With Augmentation**:
+- Applied **data augmentation techniques** (random rotations, shifts, shears, zooms, and horizontal flips) to improve model performance and generalization.
+- Enhanced robustness by training on augmented data, allowing the model to recognize emotions from various perspectives and variations.
+- Trained on the **FER-2013 dataset**.
+
+#### 3. **Transfer Learning with VGG16**:
+- Leveraged the pre-trained **VGG16** model for **transfer learning**.
+- Fine-tuned the VGG16 model on the emotion detection task by replacing the final classification layer and training on the FER-2013 dataset.
+- Transfer learning benefited from the large dataset knowledge learned by VGG16, speeding up training and improving performance.
+
+#### 4. **Transfer Learning with ResNet50**:
+- Explored transfer learning with the **ResNet50** model, another widely used CNN architecture.
+- Fine-tuned the ResNet50 model on the FER-2013 dataset to adapt its learned features to the emotion detection task.
+- Compared the results of transfer learning with **VGG16** and **ResNet50** to identify the most effective approach.
+
+### Dataset
+
+The project uses the **FER-2013 dataset** available on Kaggle, which consists of over 35,000 labeled images of faces with seven emotion categories: anger, disgust, fear, happiness, sadness, surprise, and neutral.
+
+### Results
+
+The project evaluates each approach's performance, comparing:
+- **Custom CNN from scratch**.
+- **Data Augmented CNN**.
+- **Transfer Learning with VGG16 and ResNet50**.
+
+By the end of the project, we identified the most effective approach for detecting emotions from facial expressions.
+
+### Next Steps
+- Experiment with more advanced augmentation techniques to further improve model generalization.
+- Evaluate the model's performance on a real-time facial emotion detection application.
+- Explore other transfer learning models, such as **InceptionV3** or **MobileNet** for efficiency.
+
