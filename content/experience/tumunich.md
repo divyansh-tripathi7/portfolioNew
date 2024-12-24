@@ -1,15 +1,51 @@
 ---
-title: "Remote Research Intern"
-description: "Technical University of Munich (Germany)"
-dateString: Aug 2020 - Oct 2020
+title: "Experience"
+date: 2024-12-24
 draft: false
-tags: []
-showToc: false
-weight: 303
---- 
-### 🔗 [GitHub](https://github.com/arkalim/pytorch-CycleGAN-and-pix2pix/tree/3D_Seg)
+---
 
-## Description
-**Guide:** **Mohammad Farid Azampour** (Visiting Researcher at Chair for Computer Aided Medical Procedures, TU Munich)
+# Experience  
 
-My work focused on using **Pix2Pix** (a **CGAN** architecture) to generate **Ultrasound (US) scans** from **MRI scans**, an **image-to-image translation** problem. However, a major challenge that I faced was the lack of structural correspondence between the MRI and US scans, arising from the sheer nature of the way this data is collected. Consequently, I wrote a custom loss function incorporating the **CGAN loss** with a **Dice Loss** between the segmentation maps obtained from the MRI scans and those from the generated US scan. This forces the generator to remove the structural deformation in the generated US scans. Additionally, I was given remote access to the TU-Munich’s cluster computers for training the model as well as an account in their Discourse forum.
+Here’s a glimpse of my professional journey and the impactful work I’ve done.
+
+---
+
+## 🏢 Ministry of Electronics and IT (Code4GovTech Program)  
+- **Role**: NLP Engineer  
+- **Duration**: July 2023 – September 2023  
+- **Highlights**:  
+  - Developed NLP pipelines to enhance government workflows.  
+  - Built scalable AI solutions to process and analyze unstructured data.  
+  - Contributed to impactful national-level projects.
+
+---
+
+## 🏢 HUEGO Ventures  
+- **Role**: Machine Learning Engineer  
+- **Duration**: June 2024 – August 2024  
+- **Highlights**:  
+  - Designed ML pipelines to support real-time applications.  
+  - Implemented end-to-end deployment of AI models on AWS.  
+  - Enhanced system efficiency by automating data preprocessing.
+
+---
+
+## 🏢 Kaskara Engineering  
+- **Role**: Freelance AI Developer  
+- **Duration**: May 2023 – September 2023  
+- **Highlights**:  
+  - Delivered AI-powered applications tailored to client requirements.  
+  - Focused on Generative AI workflows to improve user experience.  
+
+---
+
+## 🏢 KPG Ventures  
+- **Role**: Freelance Developer  
+- **Duration**: February 2023 – April 2023  
+- **Highlights**:  
+  - Built customer-centric platforms leveraging ML and NLP.  
+  - Created highly scalable and efficient solutions for startups.
+
+---
+
+Want to collaborate? [Contact Me](mailto:divyanshbro7@gmail.com)!
