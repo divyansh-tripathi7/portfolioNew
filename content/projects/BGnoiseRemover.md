@@ -35,4 +35,4 @@ The **Audio Cleaner** is a powerful tool designed to enhance audio quality by re
 
 This project leverages powerful DSP techniques to provide an essential tool for anyone looking to enhance audio quality, whether it's for podcasts, recordings, or research.
 
-### Category: **GenAI | Data Analysis**
+### Category: **Foureir Transform Analysis**
