@@ -36,3 +36,5 @@ This project is designed to help stakeholders in the real estate and hospitality
 - **Real Estate Analytics**: Utilized detailed Airbnb data to draw meaningful conclusions about the property market.
 
 The dashboard empowers users with the tools they need to analyze Airbnb listings in-depth, offering insights that go beyond the surface level for better business decisions.
+
+### Category: **Data Analysis| Data Visualisation**
