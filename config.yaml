@@ -1,6 +1,6 @@
 baseURL: "https://divyansh7.netlify.app/"
 languageCode: en-us
-title: Divyansh Tripathi
+title: "Divyansh Tripathi | ML & Generative AI Specialist"
 theme: PaperMod
 
 menu:
@@ -9,20 +9,14 @@ menu:
       name: Home
       url: /
       weight: 10
-    # - identifier: blog
-    #   name: Blog
-    #   url: /blog
-    #   weight: 20
     - identifier: about
       name: About
       url: /about
       weight: 20
-
     - identifier: projects
       name: Projects
       url: /projects
       weight: 40
-
     - identifier: experience
       name: Experience
       url: /experience
@@ -31,54 +25,46 @@ menu:
       name: Tags
       url: /tags
       weight: 60
-    # - identifier: notes
-    #   name: Notes
-    #   url: https://notes.arkalim.org
-    #   weight: 70
 
 params:
-  # theme
+  # Theme settings
   showToc: true
   TocOpen: false
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   hideMeta: false
 
-  # for enchanced SEO
+  # Enhanced SEO
   env: production
 
-  # Home Page
+  # Home Page Enhancements
   profileMode:
     enabled: true
     title: "Divyansh Tripathi"
-    subtitle: "Hello you can call me Divi and a very warm welcome to my portfolio website!" 
-    # subtitle: "My name is Divyansh Tripathi, I am a Pre Final year student of Electronics and Communication Engineering department at NIT Hamirpur."
-
-              # "I believe Data is the new gold and will open doors to an unimaginable and exciting age for humanity,Naturally I wish to be a part of this revolution through my knowledge of data science which includes:
-
-              # * Data Visualisation
-              # * Machine Learning
-              # * Deep Learning
-
-
-
-              #   In my free time you may find me tinkering with hardware, watching animes, reading history/philosophy, writing poetry or sharing my thoughts with my peers."
-
+    subtitle: > 
+      Welcome! I am an ML & Generative AI Specialist with expertise in developing scalable AI solutions.  
+      I am currently pursuing **M.Tech in Data Science at IIT Roorkee** and ranked **AIR 75 in GATE (Data Science & AI)**.  
+      Explore my work and let’s collaborate to build innovative solutions together!
     imageUrl: "home/dp2.jpg"
-    imageWidth: 220
-    imageHeight: 220
+    imageWidth: 200
+    imageHeight: 200
     buttons:
-      - name: Resume
-        url: "https://drive.google.com/drive/folders/1nBtvEm2yOfQAzXa3FSf_c_WjNOV6W4GE"
+      - name: View Resume
+        url: "https://drive.google.com/file/d/1GxXzisLcrsDfFcDeT93YUuRS5WsL-jvM/view?usp=sharing"
+      - name: Explore Projects
+        url: "/projects"
+      - name: Contact Me
+        url: "mailto:divyanshbro7@gmail.com"
 
   # List View
   hideDescriptionInList: false
 
-  # cover image for posts
+  # Cover images for posts
   cover:
     hiddenInList: false # hide on list pages and home
     hiddenInSingle: false # hide on single page
 
+  # Social Icons
   socialIcons:
     - name: "email"
       url: "mailto:divyanshbro7@gmail.com"
@@ -86,15 +72,12 @@ params:
       url: "https://www.linkedin.com/in/divyansh-tripathi-4bb66a205/"
     - name: "github"
       url: "https://github.com/divyansh-tripathi7"
-
-    - name: "Kaggle"
+    - name: "kaggle"
       url: "https://www.kaggle.com/divyanshtripathi7"
-    - name: "Leetcode"
+    - name: "leetcode"
       url: "https://leetcode.com/divyanshh007/"
-    # - name: "cv"
-    #   url: "https://drive.google.com/file/d/1U6Gg2RnHSCthtWLbZJBlAEI3V1WGjZty/view"
 
-  # text search
+  # Text search options
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -104,14 +87,13 @@ params:
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
 
-# for search using Fuse.js
 outputs:
   home:
     - HTML
     - RSS
     - JSON
 
-# allow HTML in MD
+# Allow HTML in Markdown
 markup:
   goldmark:
     renderer:
